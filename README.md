@@ -49,9 +49,3 @@ Run unit and CLI integration tests with:
 ```sh
 zig build test
 ```
-
-## Zigistry
-
-To have Zigistry index the GitHub repository, open the repository's **About** settings, add the `zig-package` topic, and save the change. Zigistry may take up to a day to register it.
-
-For a release, update the package version in `build.zig.zon`, push a matching `vX.Y.Z` tag to GitHub, then create the GitHub release for that tag. After the repository is public and has the `zig-package` topic, Zigistry can index it.
