@@ -1,0 +1,6 @@
+.{
+    .name = "line\nbreak",
+    .version = "1.0.0",
+    .fingerprint = 2,
+    .paths = .{"."},
+}

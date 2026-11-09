@@ -1,0 +1,18 @@
+.{
+    .name = .bad_sources,
+    .version = "1.0.0",
+    .fingerprint = 7,
+    .paths = .{
+        "build.zig",
+    },
+    .dependencies = .{
+        .url_only = .{
+            .url = "https://example.com/a.tar.gz",
+        },
+        .path_and_url = .{
+            .path = "../x",
+            .url = "https://example.com/b.tar.gz",
+        },
+        .no_source = .{},
+    },
+}

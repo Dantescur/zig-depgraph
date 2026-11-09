@@ -1,0 +1,10 @@
+.{
+    .name = .package_a,
+    .version = "1.0.0",
+    .fingerprint = 0x101,
+    .paths = .{"."},
+    .dependencies = .{
+        .shared_alias = .{ .path = "../shared" },
+        .root_alias = .{ .path = ".." },
+    },
+}

@@ -1,0 +1,9 @@
+.{
+    .name = .package_b,
+    .version = "1.0.0",
+    .fingerprint = 0x102,
+    .paths = .{"."},
+    .dependencies = .{
+        .different_shared_alias = .{ .path = "../shared" },
+    },
+}

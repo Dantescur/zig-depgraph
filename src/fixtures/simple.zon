@@ -1,0 +1,31 @@
+.{
+    .name = .zig_depgraph,
+    .version = "0.1.0",
+    .fingerprint = 0x498ba4ead7efad7f,
+    .minimum_zig_version = "0.17.1",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+    .dependencies = .{
+        .httpz = .{
+            .url = "https://example.com/httpz.tar.gz",
+            .hash = "httpz-0.1.0-abc",
+            .version = "0.1.0",
+            .paths = .{
+                "src",
+                "build.zig",
+            },
+        },
+        .custom = .{
+            .path = "../custom",
+            .lazy = true,
+        },
+        .remote = .{
+            .url = "https://example.com/remote.tar.gz",
+            .hash = "remote-0.2.0-def",
+            .lazy = false,
+        },
+    },
+}

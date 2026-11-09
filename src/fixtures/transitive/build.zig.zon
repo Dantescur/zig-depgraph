@@ -1,0 +1,14 @@
+.{
+    .name = .transitive_root,
+    .version = "1.0.0",
+    .fingerprint = 0x100,
+    .paths = .{"."},
+    .dependencies = .{
+        .a = .{ .path = "a" },
+        .b = .{ .path = "b" },
+        .remote_alias = .{
+            .url = "https://example.com/remote.tar.gz",
+            .hash = "remote-1.0.0-hash",
+        },
+    },
+}

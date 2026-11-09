@@ -1,0 +1,13 @@
+.{
+    .name = .escaped_name,
+    .version = "1.0.0",
+    .fingerprint = 1,
+    .paths = .{
+        "build.zig",
+    },
+    .dependencies = .{
+        .@"line\nbreak" = .{
+            .path = "escaped",
+        },
+    },
+}

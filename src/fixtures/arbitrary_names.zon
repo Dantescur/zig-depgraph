@@ -1,0 +1,19 @@
+.{
+    .name = "weird-names",
+    .version = "1.2.3",
+    .fingerprint = 42,
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+    .dependencies = .{
+        .my_custom_package = .{
+            .path = "../custom",
+        },
+        .@"dashed-name" = .{
+            .url = "https://example.com/dashed.tar.gz",
+            .hash = "dashed-1",
+        },
+    },
+}
